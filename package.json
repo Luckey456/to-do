@@ -1,0 +1,22 @@
+
+{
+  "name": "collab-todo",
+  "version": "1.0.0",
+  "description": "A real-time multi-user collaboration to-do list application",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "client": "cd frontend && npm start",
+    "dev": "concurrently \"npm run start\" \"npm run client\""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.2",
+    "socket.io": "^4.4.1",
+    "concurrently": "^7.0.0"
+  }
+}
